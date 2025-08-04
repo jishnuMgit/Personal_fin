@@ -1,0 +1,54 @@
+/* === Base Scrollbar Styles (apply to both themes) === */
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-hidden {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* === Scrollable Body Common === */
+.scrollable-body {
+  max-height: 250px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* === WebKit Scrollbar for both container and body === */
+.scrollable-container::-webkit-scrollbar,
+.scrollable-body::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+/* === Light Theme Scrollbar === */
+body.light .scrollable-container::-webkit-scrollbar-thumb,
+body.light .scrollable-body::-webkit-scrollbar-thumb {
+  background-color: #9ca3af; /* Tailwind gray-400 */
+}
+
+body.light .scrollable-container::-webkit-scrollbar-track,
+body.light .scrollable-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* === Dark Theme Scrollbar === */
+body.dark .scrollable-container::-webkit-scrollbar-thumb,
+body.dark .scrollable-body::-webkit-scrollbar-thumb {
+  background-color: #4b5563; /* Tailwind gray-600 */
+}
+
+body.dark .scrollable-container::-webkit-scrollbar-track,
+body.dark .scrollable-body::-webkit-scrollbar-track {
+  background: transparent;
+}
