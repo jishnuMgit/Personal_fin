@@ -10,14 +10,14 @@ import {
   Link as LinkIcon,
   Settings,
 } from 'lucide-react';
-import { Link } from 'react-router-dom'; // ✅ Correct import
+import { Link } from 'react-router-dom'; 
 
 const navItems = [
   { icon: <CircleDashed size={24} />, label: 'Home', Clink: '/' },
-  { icon: <CreditCard size={24} />, label: 'Payments', Clink: '/wallets' },
-  { icon: <DollarSign size={24} />, label: 'Earnings', Clink: '/' },
-  { icon: <Target size={24} />, label: 'Goals', Clink: '/' },
-  { icon: <User size={24} />, label: 'Customers', Clink: '/' },
+  { icon: <CreditCard size={24} />, label: 'Wallets', Clink: '/wallets' },
+  { icon: <DollarSign size={24} />, label: 'Budgets', Clink: '/budgets' },
+  { icon: <Target size={24} />, label: 'Goals', Clink: '/goals' },
+  { icon: <User size={24} />, label: 'Profile', Clink: '/profile' },
   { icon: <BarChart2 size={24} />, label: 'Analytics', Clink: '/' },
   { icon: <UserCheck size={24} />, label: 'Staff', Clink: '/' },
   { icon: <LinkIcon size={24} />, label: 'Integrations', Clink: '/' },

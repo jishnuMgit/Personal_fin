@@ -6,6 +6,9 @@ import SideNav from './components/nav/SideNav'
 import Nav from './components/nav/Nav'
 import { Route, Routes } from 'react-router-dom'
 import Wallets from './Page/wallets/Wallets'
+import Budgets from './Page/budgets/Budgets'
+import Goals from './Page/goals/Goals'
+import Profile from './Page/profile/Profile'
 
 
 function App() {
@@ -24,6 +27,9 @@ function App() {
               <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/wallets" element={<Wallets />} />
+      <Route path='/budgets' element={<Budgets/>}/>
+      <Route path='/goals' element={<Goals/>}/>
+      <Route path='/profile' element={<Profile/>}/>
     </Routes>
 
    </div>
