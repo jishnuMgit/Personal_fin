@@ -26,7 +26,7 @@ const SidebarProfile = ({ onSelect }) => {
 
       <div className="flex justify-between items-center text-sm mb-4 border-b border-gray-700 pb-4">
         <div>
-          <p className="text-gray-400 text-xl">25 June 2024</p>
+          <p className="text-gray-400 lg:text-xl text-sm md:text-sm  ">25 June 2024</p>
           <p className="text-xs">Registered</p>
         </div>
 
@@ -34,7 +34,7 @@ const SidebarProfile = ({ onSelect }) => {
 
         </div>
         <div>
-          <p className="text-gray-400 text-xl">05</p>
+          <p className="text-gray-400 lg:text-xl text-sm md:text-sm ">05</p>
           <p className="text-xs">Referral</p>
         </div>
       </div>

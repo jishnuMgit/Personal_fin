@@ -9,6 +9,7 @@ import Wallets from './Page/wallets/Wallets'
 import Budgets from './Page/budgets/Budgets'
 import Goals from './Page/goals/Goals'
 import Profile from './Page/profile/Profile'
+import AnalyticsHome from './Page/analytics/AnalyticsHome'
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Route path='/budgets' element={<Budgets/>}/>
       <Route path='/goals' element={<Goals/>}/>
       <Route path='/profile' element={<Profile/>}/>
+      <Route path='/analytics' element={<AnalyticsHome/>}/>
     </Routes>
 
    </div>
