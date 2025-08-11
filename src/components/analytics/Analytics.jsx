@@ -1,5 +1,5 @@
 import { ReceiptText, Replace, Smartphone, Sparkles  } from "lucide-react"
-import WeeklyExpensesChart from "../../components/HomeComponents/WeeklyExpensesChart"
+import WeeklyExpensesChart from "../HomeComponents/WeeklyExpensesChart"
 
 const Analytics = () => {
   return (

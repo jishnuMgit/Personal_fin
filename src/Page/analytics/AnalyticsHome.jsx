@@ -1,6 +1,11 @@
 import { ChevronRight } from "lucide-react";
 import { useState } from "react";
-import Analytict from './Analytics'
+import Analytict from '../../components/analytics/Analytics'
+import Expenses from "../../components/analytics/Expenses/Expenses";
+import Income from "../../components/analytics/Income/Income";
+import IncomevsExpenses from "../../components/analytics/IncomevsExpenses/IncomevsExpenses";
+import Balance from "../../components/analytics/Balance/Balance";
+import TransactionHistorypage from "../../components/analytics/TransactionHistory/TransactionHistory";
 
 const AnalyticsHome = () => {
   const [pagename, setPagename] = useState("Analytics");
@@ -10,17 +15,17 @@ const AnalyticsHome = () => {
       case "Analytics":
         return <div><Analytict/></div>;
       case "Expenses":
-        return <div>💸 Expenses Content</div>;
+        return <div><Expenses/></div>;
       case "Income":
-        return <div>💰 Income Content</div>;
+        return <div><Income/></div>;
       case "Income vs Expenses":
-        return <div>⚖️ Income vs Expenses Content</div>;
+        return <div><IncomevsExpenses/></div>;
       case "Balance":
-        return <div>🏦 Balance Content</div>;
+        return <div><Balance/></div>;
       case "Transaction History":
-        return <div>📂 Transaction History Content</div>;
+        return <div><TransactionHistorypage/></div>;
       default:
-        return <div>📊 Default Analytics Content</div>;
+        return <div><Analytict/></div>;
     }
   };
 

@@ -14,15 +14,15 @@ const icons = {
   Entertainment: Clapperboard,
 };
 
-const TransactionHistory = () => {
+const TransactionHistory = ({transactions}) => {
   // Local static data (you can edit or add more)
-  const transactions = [
-    { category: 'Beauty', date: '12.12.2023', desc: 'Grocery Items', amount: '-32.20', currency: 'USD' },
-    { category: 'Bills & Fees', date: '12.12.2023', desc: 'Electricity Bill', amount: '-45.00', currency: 'USD' },
-    { category: 'Car', date: '13.12.2023', desc: 'Fuel', amount: '-60.00', currency: 'USD' },
-    { category: 'Education', date: '14.12.2023', desc: 'Online Course', amount: '-100.00', currency: 'USD' },
-    { category: 'Entertainment', date: '15.12.2023', desc: 'Cinema', amount: '-12.00', currency: 'USD' },
-  ];
+  // const transactions = [
+  //   { category: 'Beauty', date: '12.12.2023', desc: 'Grocery Items', amount: '-32.20', currency: 'USD' },
+  //   { category: 'Bills & Fees', date: '12.12.2023', desc: 'Electricity Bill', amount: '-45.00', currency: 'USD' },
+  //   { category: 'Car', date: '13.12.2023', desc: 'Fuel', amount: '-60.00', currency: 'USD' },
+  //   { category: 'Education', date: '14.12.2023', desc: 'Online Course', amount: '-100.00', currency: 'USD' },
+  //   { category: 'Entertainment', date: '15.12.2023', desc: 'Cinema', amount: '-12.00', currency: 'USD' },
+  // ];
 
   return (
     <div className="bg-white dark:bg-[#1d1933] p-6 rounded-lg border shadow-sm dark:border-none w-full">

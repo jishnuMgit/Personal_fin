@@ -10,6 +10,9 @@ import Budgets from './Page/budgets/Budgets'
 import Goals from './Page/goals/Goals'
 import Profile from './Page/profile/Profile'
 import AnalyticsHome from './Page/analytics/AnalyticsHome'
+import Support from './Page/support/Support'
+import CreateTicket from './Page/support/CreateTicket'
+import Affiliates from './Page/affiliates/Affiliates'
 
 
 function App() {
@@ -32,6 +35,11 @@ function App() {
       <Route path='/goals' element={<Goals/>}/>
       <Route path='/profile' element={<Profile/>}/>
       <Route path='/analytics' element={<AnalyticsHome/>}/>
+      <Route path='/support' element={<Support/>}/>
+            <Route path='/createTicket' element={<CreateTicket/>}/>
+                        <Route path='/affiliates' element={<Affiliates/>}/>
+
+
     </Routes>
 
    </div>

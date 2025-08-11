@@ -19,8 +19,8 @@ const navItems = [
   { icon: <Target size={24} />, label: 'Goals', Clink: '/goals' },
   { icon: <User size={24} />, label: 'Profile', Clink: '/profile' },
   { icon: <BarChart2 size={24} />, label: 'Analytics', Clink: '/analytics' },
-  { icon: <UserCheck size={24} />, label: 'Staff', Clink: '/' },
-  { icon: <LinkIcon size={24} />, label: 'Integrations', Clink: '/' },
+  { icon: <UserCheck size={24} />, label: 'Support', Clink: '/support' },
+  { icon: <LinkIcon size={24} />, label: 'Affiliates', Clink: '/affiliates' },
   { icon: <Settings size={24} />, label: 'Settings', Clink: '/' },
 ];
 
