@@ -1,5 +1,6 @@
 // CreateTicketForm.jsx
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const CreateTicketForm = ({ onCancel, onCreate }) => {
   const QUESTION_TYPES = ["Earning", "Withdrawals", "Profile", "General", "Others"];
@@ -110,12 +111,13 @@ const CreateTicketForm = ({ onCancel, onCreate }) => {
 
         {/* Submit button */}
         <div className="pt-2">
-          <button
-            type="submit"
+          <Link
+          to={'/TicketsPage'}
+           
             className="px-5 py-2.5 rounded-lg bg-[#3B82F6] text-white font-medium hover:opacity-90"
           >
             Create
-          </button>
+          </Link>
         </div>
       </form>
     </div>

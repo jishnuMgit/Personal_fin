@@ -13,6 +13,12 @@ import AnalyticsHome from './Page/analytics/AnalyticsHome'
 import Support from './Page/support/Support'
 import CreateTicket from './Page/support/CreateTicket'
 import Affiliates from './Page/affiliates/Affiliates'
+import Setting from './Page/setting/Setting'
+import AddAccountPage from './Page/wallets/AddAccountPage'
+import AddBankForm from './Page/wallets/AddBankForm'
+import LinkDebitCard from './Page/wallets/LinkDebitCard'
+import TicketDetails from './Page/support/TicketDetails'
+import TicketsPage from './Page/support/Tickets'
 
 
 function App() {
@@ -36,8 +42,17 @@ function App() {
       <Route path='/profile' element={<Profile/>}/>
       <Route path='/analytics' element={<AnalyticsHome/>}/>
       <Route path='/support' element={<Support/>}/>
-            <Route path='/createTicket' element={<CreateTicket/>}/>
-                        <Route path='/affiliates' element={<Affiliates/>}/>
+      <Route path='/createTicket' element={<CreateTicket/>}/>
+      <Route path='/affiliates' element={<Affiliates/>}/>
+      <Route path='/setting' element={<Setting/>}/>
+      <Route path='/AddAccountPage' element={<AddAccountPage/>}/>
+      <Route path='/AddBankForm' element={<AddBankForm/>}/>
+      <Route path='/LinkDebitCard' element={<LinkDebitCard/>}/>
+      <Route path='/TicketDetails' element={<TicketDetails/>}/>
+            <Route path='/TicketsPage' element={<TicketsPage/>}/>
+
+
+
 
 
     </Routes>

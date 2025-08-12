@@ -1,6 +1,6 @@
 // TicketsDashboard.jsx
 import { Plus, Bell, ChevronRight, AlertCircle } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const card =
   "bg-white dark:bg-[#1d1933] rounded-lg shadow-sm dark:border-none border border-gray-500";
@@ -27,7 +27,6 @@ export default function TicketsDashboard({
   tickets = [],
   notifications = [],
   onClearNotifications = () => {},
-  onOpenTicket = () => {},
 }) {
   const navigate = useNavigate();
 
@@ -61,10 +60,18 @@ export default function TicketsDashboard({
           <ul className="divide-y divide-gray-200/10">
             {tickets.slice(0, 1).map((t) => (
               <li key={t.id} className="py-3">
-                <div className="text-sm dark:text-white text-black">{t.title}</div>
-                <div className="text-xs text-gray-400">
-                  Posted on {t.dateFormatted}
-                </div>
+                <Link
+                  to="/TicketDetails"
+                  state={{ ticket: t }}
+                  className="block"
+                >
+                  <div className="text-sm dark:text-white text-black">
+                    {t.title}
+                  </div>
+                  <div className="text-xs text-gray-400">
+                    Posted on {t.dateFormatted}
+                  </div>
+                </Link>
               </li>
             ))}
           </ul>
@@ -112,8 +119,9 @@ export default function TicketsDashboard({
           <ul className="divide-y divide-gray-200/10">
             {tickets.map((t) => (
               <li key={t.id}>
-                <button
-                  onClick={() => onOpenTicket(t)}
+                <Link
+                  to="/TicketDetails"
+                  state={{ ticket: t }}
                   className="w-full flex items-center justify-between py-4 text-left"
                 >
                   <div>
@@ -126,7 +134,7 @@ export default function TicketsDashboard({
                     </div>
                   </div>
                   <ChevronRight size={18} className="text-gray-400" />
-                </button>
+                </Link>
               </li>
             ))}
           </ul>

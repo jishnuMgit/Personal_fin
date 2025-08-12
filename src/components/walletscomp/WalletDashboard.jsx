@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const WalletDashboard = () => {
   const [selectedWallet, setSelectedWallet] = useState('City Bank');
@@ -42,9 +43,9 @@ const WalletDashboard = () => {
             </div>
           ))}
 
-          <div className="bg-white dark:bg-[#1D1A33] text-sm font-semibold px-4 py-3 rounded-lg flex items-center justify-between cursor-pointer border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-[#2a2646] ">
+          <Link to={'/AddAccountPage'} className="bg-white dark:bg-[#1D1A33] text-sm font-semibold px-4 py-3 rounded-lg flex items-center justify-between cursor-pointer border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-[#2a2646] ">
             Add new wallet <span className="text-xl">➕</span>
-          </div>
+          </Link>
         </div>
 
         {/* Main Panel */}

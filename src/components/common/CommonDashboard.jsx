@@ -9,6 +9,7 @@
 
 import React, { useState } from 'react';
 import BudgetPeriodChart from '../Budgets/BudgetPeriodChart';
+import { Link } from 'react-router-dom';
 
 const CommonDashboard = ({
   budgets = [],
@@ -45,9 +46,11 @@ const CommonDashboard = ({
       </div>
     ))}
 
-    <div className="bg-white dark:bg-[#1d1933] text-sm font-semibold px-4 py-3 rounded-lg flex items-center justify-between cursor-pointer border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-[#2a2646]">
+    
+
+    <Link to={'/AddAccountPage'} className="bg-white dark:bg-[#1D1A33] text-sm font-semibold px-4 py-3 rounded-lg flex items-center justify-between cursor-pointer border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-[#2a2646] ">
       Add new budget <span className="text-xl">➕</span>
-    </div>
+          </Link>
   </div>
 
   {/* Main Panel */}

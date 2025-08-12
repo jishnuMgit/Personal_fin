@@ -8,7 +8,7 @@ const Goals = () => {
 
   return (
     <div>
- <div className="sm:ml-16 flex flex-col space-y-10 p-4 pt-[120px] lg:ml-10 bg-white dark:bg-[#131129] min-h-screen">
+ <div className="sm:ml-16 flex flex-col pb-10 space-y-10 p-4 pt-[120px] lg:ml-10 bg-white dark:bg-[#131129] min-h-screen">
 
 
      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between md:pl-20 lg:mr-20">

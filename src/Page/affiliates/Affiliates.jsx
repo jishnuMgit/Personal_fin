@@ -4,7 +4,7 @@ import ReferralDashboard from '../../components/affiliates/ReferralDashboard'
 
 const Affiliates = () => {
   return (
-    <div className="sm:ml-16 p-4 pt-[120px] lg:ml-10 bg-white dark:bg-[#131129] min-h-screen">
+    <div className="sm:ml-16 p-4 pt-[120px] pb-14 lg:ml-10 bg-white dark:bg-[#131129] min-h-screen">
        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between lg:mx-28">
             <div>
               <h1 className="text-2xl font-bold">Support</h1>

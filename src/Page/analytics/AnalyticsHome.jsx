@@ -31,7 +31,7 @@ const AnalyticsHome = () => {
 
   return (
     <div>
-      <div className="sm:ml-16 p-4 pt-[120px] lg:ml-10 md:ml-14 bg-white dark:bg-[#131129] min-h-screen">
+      <div className="sm:ml-16 p-4 pb-14  pt-[120px] lg:ml-10 md:ml-14 bg-white dark:bg-[#131129] min-h-screen">
         <div className="flex flex-col text-black dark:text-white space-y-10 max-w-7xl mx-auto">
           {/* Header */}
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
